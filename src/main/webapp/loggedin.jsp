@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="/add.jsp" class="nav-link">Add new product</a>
+                <a href="/add.jsp" class="nav-link">Thêm sản phẩm</a>
             </li>
         </ul>
     </div>
@@ -43,9 +43,9 @@
             <table class="table">
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Picture</th>
-                    <th>Price</th>
+                    <th>Tên</th>
+                    <th>Ảnh</th>
+                    <th>Giá</th>
                 </tr>
                 <c:forEach var="gun" items="${Gun}" varStatus="loop">
                     <tr>
@@ -55,12 +55,12 @@
                         <td><img src="${gun.picture}" style="width: 400px;height: 300px"></td>
                         <td>
                             <form action="/delete" method="post">
-                                <button type="submit" name="pos" value="${loop.index}">Delete</button>
+                                <button type="submit" name="pos" value="${loop.index}">Xóa</button>
                             </form>
                         </td>
                         <td>
                             <form action="edit.jsp" method="post">
-                                <button type="submit" name="pos" value="${loop.index}">Edit</button>
+                                <button type="submit" name="pos" value="${loop.index}">Sửa</button>
                                 <input type="hidden" name="id" value="${gun.id}">
                                 <input type="hidden" name="name" value="${gun.name}">
                                 <input type="hidden" name="price" value="${gun.price}">

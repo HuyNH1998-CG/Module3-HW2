@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="/loggedin" class="nav-link">Go back</a>
+                <a href="/loggedin" class="nav-link">Quay lại</a>
             </li>
         </ul>
     </div>
@@ -40,17 +40,17 @@
             </form>
         </div>
         <div class="col-sm-8">
-            <h1>Input product infomation here</h1>
+            <h1>Nhập Thông tin sản phẩm tại đây</h1>
             <form action="/add" method="post" class="container">
                 <label>ID</label><br>
                 <input type="text" name="id"><br>
-                <label>Name</label><br>
+                <label>Tên</label><br>
                 <input type="text" name="name"><br>
-                <label>Price</label><br>
+                <label>Giá</label><br>
                 <input type="text" name="price"><br>
-                <label>Picture</label><br>
+                <label>Ảnh</label><br>
                 <input type="text" name="picture"><br>
-                <button type="submit" class="btn btn-danger">Add a product</button>
+                <button type="submit" class="btn btn-danger">Thêm mới</button>
             </form>
         </div>
     </div>

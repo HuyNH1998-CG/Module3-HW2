@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="/loggedin" class="nav-link">Go back</a>
+                <a href="/loggedin" class="nav-link">Quay Lại</a>
             </li>
         </ul>
     </div>
@@ -40,18 +40,18 @@
             </form>
         </div>
         <div class="col-sm-8">
-            <h1>Input new infomation here</h1>
+            <h1>Nhập thông tin mới cho sản phẩm</h1>
             <form action="/edit" method="post" class="container">
                 <input type="hidden" name="pos" value="<%=request.getParameter("pos")%>" readonly><br>
                 <label>ID</label><br>
                 <input type="text" name="id" value="<%=request.getParameter("id")%>"><br>
-                <label>Name</label><br>
+                <label>Tên</label><br>
                 <input type="text" name="name" value="<%=request.getParameter("name")%>"><br>
-                <label>Price</label><br>
+                <label>Giá</label><br>
                 <input type="text" name="price" value="<%=request.getParameter("price")%>"><br>
-                <label>Picture</label><br>
+                <label>Ảnh</label><br>
                 <input type="text" name="picture" value="<%=request.getParameter("picture")%>"><br>
-                <button type="submit" class="btn btn-danger">Edit</button>
+                <button type="submit" class="btn btn-danger">Sửa</button>
             </form>
         </div>
     </div>

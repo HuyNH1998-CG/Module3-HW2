@@ -6,6 +6,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 @WebServlet(name = "generate", value = "/loggedin")
@@ -19,6 +20,7 @@ public class generator extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
         request.setAttribute("Gun", products);
         RequestDispatcher rq = request.getRequestDispatcher("/loggedin.jsp");
         rq.forward(request, response);
@@ -26,6 +28,7 @@ public class generator extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
         request.setAttribute("Gun", products);
         RequestDispatcher rq = request.getRequestDispatcher("/loggedin.jsp");
         rq.forward(request, response);

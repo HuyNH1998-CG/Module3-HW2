@@ -1,14 +1,14 @@
-Servlet/logout.java
- Servlet.logout
 Classes/Product.java
  Classes.Product
+Servlet/logout.java
+ Servlet.logout
 Servlet/login.java
  Servlet.login
 Servlet/add.java
  Servlet.add
-Servlet/edit.java
- Servlet.edit
-Servlet/generator.java
- Servlet.generator
 Servlet/delete.java
  Servlet.delete
+Servlet/generator.java
+ Servlet.generator
+Servlet/edit.java
+ Servlet.edit
